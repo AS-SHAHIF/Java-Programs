@@ -1,0 +1,20 @@
+import java.util.*;
+class SequenceGenerator{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter How many terms to Generate Sequence:");
+        int terms=sc.nextInt();
+        double value=0.5;
+        for(int i=1;i<=terms;i++){
+            if(value == (int)value){
+                System.out.print((int)value);
+            }else{
+                System.out.print(value);
+            }
+            if(i<terms){
+                System.out.println(",");
+            }
+            value*=2;
+        }
+    }
+}
