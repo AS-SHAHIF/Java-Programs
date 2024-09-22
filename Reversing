@@ -1,0 +1,42 @@
+
+
+class Reverse{
+    public static void main(String args[]){
+        String name="malayalam";
+        String ch="";
+        System.out.println("Original String : "+name);
+        for(int i=name.length()-1;i>=0;i--){
+            ch+=name.charAt(i);
+        }
+        System.out.println("Reversed String : "+ch);
+        if(name.equals(ch)){//checking Palindrome
+            System.out.println("The Above String is Palindrome.");
+        }else{
+            System.out.println("The Above String is not Palindrome.");
+        }
+    }
+}
+
+-----------------------------------------------------------------------------------------------
+
+class Reverse{
+    public static int reversed(int n){
+        int reversed_n=0;
+        while(n>0){
+            reversed_n=reversed_n*10+n%10;
+            n=n/10;
+        }
+        return reversed_n;
+    }
+    public static void main(String[] args) {
+        int n=123321;
+        int reversed_num=reversed(n);
+        System.out.println("original Number:"+n);
+        System.out.println("Reversed Number:"+reversed_num);
+        if(n==reversed_num){
+            System.out.println("It is Palindrome.");
+        }else{
+            System.out.println("It is not Palindrome.");
+        }
+    }
+}
