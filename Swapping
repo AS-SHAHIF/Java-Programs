@@ -1,0 +1,57 @@
+class Swap{
+    public static void main(String args[]){
+
+        //With using third variable
+
+        // int a=10,b=20,temp;
+        // System.out.println("Before Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+        // temp=a;
+        // a=b;
+        // b=temp;
+        // System.out.println("After Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+
+
+        // //without using third variable
+
+        // int a=10,b=20;
+        // System.out.println("Before Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+        // a=a+b;//30
+        // b=a-b;//30-20=10
+        // a=a-b;//30-10=20
+        // System.out.println("After Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+
+
+        //in a single statement
+
+        // int a=10,b=20;
+        // System.out.println("Before Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+        // b=a+b-(a=b);//b=10+20-(20)=10
+        // System.out.println("After Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+
+        //using XOR
+
+        // int a=10,b=20;
+        // System.out.println("Before Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+        // a=a^b;
+        // b=a^b;
+        // a=a^b;
+        // System.out.println("After Swapping:");
+        // System.out.println("a="+a);
+        // System.out.println("b="+b);
+
+    }
+}
